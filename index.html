@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本分词</title>
+</head>
+ <!-- 表单方法为post，对应main.py中request.method=="POST" -->
+ <!-- name="item_text"用于main.py获取input内容 -->
+ <!-- 直接用{{xx}}传递参数 -->
+<body>
+        <div class="form-div">
+            <form method="POST">
+                <input name="item_text" type="text">
+                <input type="submit">
+            </form>
+        </div>
+        <span>message:{{item_content}}</span>
+        <br>
+        <br>
+        <span>{{answer}}</span>
+</body>
+</html>
